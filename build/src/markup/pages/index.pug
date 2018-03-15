@@ -1,0 +1,182 @@
+extends ../template
+
+block any
+	include ../blocks/menu/menu
+	
+block content
+	.simple
+		.container
+			.row
+				.col-md-7
+					.simple__text
+						p It's simple...
+						h1 Jinni’s Affiliates make more than the others.
+						p Jinni is expanding, that’s why we are offering 50% Rev-Share on your traffic right from the start.*
+					.row
+						a.simple-btn.simple-btn--white(href="#") commisions
+						a.simple-btn.simple-btn--green(href="#") start now
+				.col-md-5
+					img.jinni-img(src=i + "", alt="")
+	.what
+		.container
+			h2 What are we paying
+			p There are 3 ways you can go:
+			ul.nav.nav-tabs
+				li.nav-item
+					a.nav-link(href='#') Rev - share
+				li.nav-item
+					a.nav-link(href='#') CPA
+				li.nav-item
+					a.nav-link(href='#') Hybrid
+			ul.what-content
+				li.what-content__item
+					.rev
+						ul.total
+							li.total__item
+								.total__box
+									.total__cptn First 3 months welcome bonus
+									.total__percent 50%
+							li.total__item
+								.total__box
+									.total__cptn NGR €0-500
+									.total__percent 30%
+							li.total__item
+								.total__box
+									.total__cptn NGR €500-1500
+									.total__percent 35%
+							li.total__item
+								.total__box
+									.total__cptn NGR €1500-3500
+									.total__percent 40%
+							li.total__item
+								.total__box
+									.total__cptn NGR over €3500
+									.total__percent 45%
+						.rev-text
+							p Sign up to receive 50% Rev-share on your traffic
+						.rev-btn-wr
+							a.simple-btn.simple-btn--green(href="#") start now
+				li.what-content__item
+					.what-box
+						h4 Custom CPA deals are possible.
+						p We welcome every deal as long as both parties are fully satisfied.<br>Contact us today and our affiliate manager will gladly discuss your CPA deal with you.
+						p
+							a.simple-btn.simple-btn--green(href="#") let's talk
+				li.what-content__item
+					.what-box
+						h4 Custom hybrid deals are possible.
+						p We welcome every deal as long as both parties are fully satisfied.<br>Contact us today and our affiliate manager will gladly discuss your hybrid deal with you.
+						p
+							a.simple-btn.simple-btn--green(href="#") let's talk
+		
+		.container
+			hr
+		.your
+			.container
+				h2 Your conversion tools
+				p Constantly optimizing conversion on every step:
+				.row.your__list
+					.col-md-3
+						.your__img
+							img(src=i + "", alt="")
+						h4 LPs & Ads
+						p We are continually creating new marketing materials for our affiliates so you can improve your conversion rates and grow your business.
+					.col-md-3
+						.your__img
+							img(src=i + "", alt="")
+						h4 Emails
+						p We make sure your  traffic is always aware of our exclusive offers with personalized and automated email cycles.
+					.col-md-3
+						.your__img
+							img(src=i + "", alt="")
+						h4 Website
+						p We constantly monitor and optimize our website to deliver a User Experience designed to up-sell your traffic.
+					.col-md-3
+						.your__img
+							img(src=i + "", alt="")
+						h4 Agents
+						p Our dedicated Customer Support agents are here to help you reach even the most  "Hard-to-Get" clients.
+		.container
+			hr
+		.chance
+			.container
+				h2 This is your chance to maximize your epic 50% rev-share on your traffic
+				.start-btn-wr
+					a.simple-btn.simple-btn--green(href="#") start now
+	.join
+		.container
+			h2 Want to join our affiliate program?
+			p
+				| Have a question in mind?
+				span Let’s talk
+				| :
+			.join-form-wr
+				form(action="").join-form
+					.join-form__group
+						.join-form__input-wr
+							i.icon-
+							select.selectpicker.join-form
+								option Mr.
+								option Mrs.
+							input.join-form__input(type="text" placeholder="First Name")
+					.join-form__group
+						.join-form__input-wr
+							i.icon-
+							input.join-form__input(type="text" placeholder="Last Name")
+					.join-form__group
+						.join-form__input-wr
+							i.icon-
+							input.join-form__input(type="text" placeholder="Email")
+					.join-form__group
+						.join-form__input-wr
+							i.icon-
+							select.selectpicker.join-form
+								option
+									.flags.flags--972
+									| +972
+								option
+									.flags.flags--912
+									| +912
+								option
+									.flags.flags--902
+									| +903
+						.join-form__input-wr
+							i.icon-
+							input.join-form__input(type="tel" placeholder="Phone Number")
+					.join-form__group
+						.join-form__input-wr
+							i.icon-
+							input.join-form__input(type="text" placeholder="Subject")
+					.join-form__group
+						.join-form__textarea-wr
+							i.icon-
+							textarea.join-form__textarea(type="text" placeholder="Message")
+					.join-form__group
+						a.simple-btn.simple-btn--green(href="#") Send
+	.brands
+		.container
+			ul.brands-list
+				li.brands-list__item
+					img(src=i + "", alt="")
+				li.brands-list__item
+					img(src=i + "", alt="")
+				li.brands-list__item
+					img(src=i + "", alt="")
+				li.brands-list__item
+					img(src=i + "", alt="")
+				li.brands-list__item
+					img(src=i + "", alt="")
+	.our
+		.container
+			h3 Our payment methods offer a world of choice
+			ul.our-list
+				- var our = [""];
+				each item in our
+					li.our-list__item
+						.our__box
+							img(src=i + item, alt="")
+	.bottom
+		.container
+			p Jinni Lotto is operated by Jinni Tech Limited of First Floor, Jubilee Building, Victoria Street, Douglas, Isle of Man, IM1 2SH<br>Jinni Tech Ltd is licensed and regulated by the Isle of Man Gambling Supervision Commission under a licence issued under the Online Gambling Regulation Act 2001<br>on [date and year]. Please note, this license is not applicable to players residing in the UK.
+			p Jinni Tech Ltd does not operate a lottery. Members place bets on the outcome of national lotteries. Official lottery tickets and insurance are purchased based on the bets placed so that all winnings are equal to the cash option of national lottery winnings.
+			p Copyright © 2017, Jinni Tech Ltd. All rights reserved. The National Lottery and Lotto are trademarks of the National Lottery Commission. EuroMillions is the trademark<br>of Services aux Loteries en Europe. Jinni Tech Limited is not connected to or affiliated with any body or organisation related to the National Lottery or any other lottery.
