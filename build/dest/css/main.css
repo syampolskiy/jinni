@@ -169,3 +169,59 @@ textarea:focus {
 .fa span {
 	display: none;
 }
+
+.language-select {
+	color: #201c38;
+	font-family: Poppins;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 24px;
+}
+
+.header {
+	background-color: #fff;
+	box-shadow: 0 5px 15px 0 rgba(127, 177, 223, .3);
+}
+.header__container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo img {
+	width: 177px;
+}
+
+.simple-btn {
+	color: #31ce03;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 23px;
+	text-align: center;
+	border: 1px solid #31ce03;
+	border-radius: 25px;
+	display: inline-block;
+	vertical-align: top;
+	padding: 13px 15px;
+	min-width: 121px;
+	text-transform: uppercase;
+}
+.simple-btn:hover,
+.simple-btn:active,
+.simple-btn:focus {
+	color: #31ce03;
+	opacity: .7;
+}
+.simple-btn--green {
+	background: #31ce03;
+	color: #fff;
+}
+.simple-btn--green:hover,
+.simple-btn--green:active,
+.simple-btn--green:focus {
+	color: #fff;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+}
